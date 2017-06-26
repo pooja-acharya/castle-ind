@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="castleApp">
+<head lang="en">
+
+<title>Castle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script
+	src="http://cdn.jsdelivr.net/webjars/angularjs/1.5.3/angular.min.js"></script>
+<script type="text/javascript"
+	src="js/angularjs/angular-resource.min.js"></script>
+<!-- Bootstrap css -->
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<!-- Jquery js -->
+<!-- <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap js -->
+<script
+	src="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<script type="text/javascript"
+	src="js/castleClient.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css"/>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+<script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    calendarWeeks: true,
+    todayHighlight: true,
+    autoclose: true
+});  
+});
+
+</script>
+</head>
+<body ng-controller="castleController"> 
+
+<div ng-include="'html/headerMenu.html'"></div>
+<div ng-if="showAboutUs" ng-include="'html/aboutUs.html'"></div>
+<div ng-if="showContact" ng-include="'html/contactUs.html'"></div>
+<div ng-if="showComRegis" ng-include="'html/compulsaryRegistration.html'"></div>
+<div ng-if="showCloud" ng-include="'html/cloudTele.html'"></div>
+<div ng-if="isHome" ng-include="'html/home.html'"></div>
+<div ng-if="showEve" ng-include="'html/eventManagement.html'"></div>
+<div class="container">
+<div id="alertModal" class="modal fade" role="dialog" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="modal-title"></h5>
+						</div>
+						<div class="modal-body">
+							<b><p id="cssClass"></p></b>
+						</div>
+
+						<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal">
+					      <span class="icon icon-actions-menu"></span>
+					      Ok
+					      </button>
+					      
+						</div>
+
+					</div>
+				</div>
+			</div>
+</div>
+<br/><br/>
+<div ng-include="'html/footer.html'"></div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+</body>
+</html>

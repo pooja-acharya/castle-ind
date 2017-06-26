@@ -1,0 +1,125 @@
+<div class="container-fluid" ng-show="menu">
+	<div class="starter-template" style="background-color: white;">
+
+
+		<div class="col-md-4 pull-right">
+			<div class="pull-left">
+				<span class="lead">Email us now</span><br /> <span
+					class="lead">email: info@castleind.in</span>
+			</div>
+			<br /> <br /> <br />
+			<div class="col-md-6">
+				<a href="#"><span class="fa-stack fa-lg" style="color:black"> <i
+						class="fa fa-square-o fa-stack-2x"></i> <i
+						class="fa fa-twitter fa-stack-1x"></i>
+				</span></a> <a href="#"> <span class="fa-stack fa-lg" style="color:black"> <i
+						class="fa fa-square-o fa-stack-2x"></i> <i
+						class="fa fa-facebook fa-stack-1x"></i>
+				</span></a> <a href="#"> <span class="fa-stack fa-lg" style="color:black"> <i
+						class="fa fa-square-o fa-stack-2x"></i> <i
+						class="fa fa-youtube-play fa-stack-1x"></i>
+				</span></a>
+			</div>
+			<!-- <ul class="list-group">
+				<li class="col-md-2"><a href="#"><span
+						class="fa-stack fa-lg"> <i
+							class="fa fa-square-o fa-stack-2x"></i> <i
+							class="fa fa-twitter fa-stack-1x"></i>
+					</span></a></li>
+				<li class="col-md-2"><a href="#"> <span
+						class="fa-stack fa-lg"> <i
+							class="fa fa-square-o fa-stack-2x"></i> <i
+							class="fa fa-facebook fa-stack-1x"></i>
+					</span></a></li>
+				<li class="col-md-2"><a href="#"> <span
+						class="fa-stack fa-lg"> <i
+							class="fa fa-square-o fa-stack-2x"></i> <i
+							class="fa fa-youtube-play fa-stack-1x"></i>
+					</span></a></li>
+
+			</ul> -->
+		</div>
+		<div class="col-md-8 pull-left">
+		<img src="images/castle.png" width="250px" height="100px"/>
+		<!-- <h1 class="bold lead">CASTLE</h1> -->
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">CASTLE</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#" ng-click="showHome()"><i
+						class="fa fa-shield" aria-hidden="true"></i> Home</a></li>
+				<li class="dropdown"><a href="#"
+					ng-click="showAboutUsDetails()" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">About us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">Services <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#" ng-click="showCompul()">Compulsary
+								Registration(BIS)</a></li>
+						<li><a href="#" ng-click="showCloudTel()">Cloud Telephony</a></li>
+						<!-- <li><a href="#" ng-click="showEventManag()">Event Management</a></li> -->
+					</ul></li>
+					<li class="dropdown"><a
+					href="#" ng-click="showEventManag()">Event Management</a></li>
+				<li class="dropdown"><a
+					href="http://164.100.105.199:8071/cmd3/index.php?search=&submit=Search!">Registered
+						Manufacturers</a></li>
+				<!-- <li><a href="#">Accounts</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learnings <span class="caret"
+></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">New Learning</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+      </li> -->
+				<li class="dropdown"><a href="#" ng-click="showContactUs()"
+					class="dropdown-toggle" data-toggle="dropdown" role="button"
+					aria-haspopup="true" aria-expanded="false">Contact us </a></li>
+			</ul>
+			<!-- <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon 
+glyphicon-link" aria-hidden="true"></span> Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.google.ch" target="_blank">My Webmail</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.google.ch" target="_blank">Timelogger</a></li>
+            <li><a href="http://www.cubetech.ch" target="_blank">cubetech.ch</a></li>
+         </ul>
+        </li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon 
+glyphicon-user" aria-hidden="true"></span> Jack Bass<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.fgruber.ch/" target="_blank"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> User Settings</a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
+         </ul>
+        </li>
+      </ul> -->
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
